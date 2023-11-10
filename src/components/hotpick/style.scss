@@ -1,0 +1,43 @@
+@use '../../scss/' as *;
+.react-tabs__tab-list {
+    @include flex(center,left);
+    margin-bottom: 50px;
+    @include desktop-1200 {
+        flex-wrap: wrap;
+        li {
+            margin-top: 10px;
+        }
+    }
+    li {
+        padding: 7.5px 16px;
+        margin-right: 14.5px;
+        border-radius: 100px;
+        border: 1px solid var(--primary-color36);
+        background-color: var(--primary-color22);
+        color: #565660;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        @include transition3;
+        cursor: pointer;
+
+        &.react-tabs__tab--selected,&:hover {
+            background-color: #3749E9;
+            border-color: #3749E9;
+            color: #fff;
+        }
+    }
+}
+
+.tf-center .react-tabs__tab-list {
+    justify-content: center;
+        li {
+            border-radius: 12px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+}
+
+

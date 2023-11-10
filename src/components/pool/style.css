@@ -1,0 +1,295 @@
+.tf-baner-live-auction.active {
+    pointer-events: none;
+}
+
+.poolcreatelist h1 {
+    font-size: 12px;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 88%;
+}
+
+.createpool {
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    gap: 5%;
+}
+
+.createpool span {
+    font-size: 20px;
+}
+
+
+.poolcreatelist {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: fit-content;
+    width: 30vw;
+    background-color: white;
+    color: black;
+    transform: translate(-50% , -50% );
+    box-shadow: 0px 0px 10px 35vw rgba(0, 0, 0, 0.416);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.inputpoolcreatelist {
+    margin-bottom: 10%;
+    outline: none;
+    border: none;
+}
+
+.inputpoolcreatelist label{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.inputpoolcreatelist :where(input , select)  {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.poolcreatelist .buttonCreate{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.optioning {
+    /* Tạo khoảng cách giữa Symbol và Quantity */
+    margin-right: 10px; /* Điều chỉnh khoảng cách theo ý muốn */
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  }
+  
+  .quantity {
+    /* Tùy chỉnh kiểu dáng của Quantity */
+    font-weight: bold;
+    color: #888;
+    margin-left: 10px; /* Điều chỉnh khoảng cách theo ý muốn */
+  }
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 100%;
+    margin: 3% auto;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+
+.grid-items {
+    width: 100%;
+    background-color: #35353B;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.grid-items:last-child {
+    border-bottom: none;
+}
+
+.grid-item {
+    height: 100%;
+    font-size: 18px;
+    gap: 2%;
+    border-bottom: 1px solid gold;
+}
+
+.grid-item.item1 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0 4%;
+}
+
+.grid-item.item2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-item.item3 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    padding-right: 1%;
+}
+
+
+.grid-item:first-child , .grid-item:last-child{
+    flex-direction: row;
+    font-size: 14px;
+}
+
+
+.grid-item .imaging{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: gray;
+    border-radius: 50%;
+
+}
+
+.grid-item .title {
+    font-size: 13px;
+    color: rgb(165, 165, 165);
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
+.stake1 , .stake2 , .harvest {
+    width: 40%;
+    height: 40%;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    position:relative;
+}
+
+.stake1 , .stake2 {
+    width: 100%;
+}
+
+.addfram {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.addfram input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 2px 5px;
+}
+
+.harvest {
+    color: yellow;
+    background: transparent;
+    outline: 2px solid yellow;
+}
+
+.harvest:hover {
+    background-color: yellow;
+    color: black;
+}
+
+@media (max-width: 1300px) { 
+    .name {
+        width: 90%;
+        word-wrap: break-word;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .createpool {
+        width: 20%;
+    }
+
+    .grid-items {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 40vh;
+        border-bottom: none;
+    }
+
+    .grid-item {
+        font-size: 18px;
+        gap: 2%;
+        height: 0;
+        border-bottom: none;
+    }
+
+    .grid-item:last-child {
+        border-bottom: 1px solid gold;
+    }
+
+    .grid-item.item1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;    
+    }    
+
+    .grid-item.item2 {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .grid-item.item3 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        gap: 5%;
+        padding:0 10%;
+    }
+    
+    .grid-item .imaging{
+        height: 7vh;
+    }
+
+    .name {
+        font-size: 1.8vw;
+    }
+}   
+
+@media (max-width: 767px) {
+    .createpool {
+        width: 30%;
+    }
+
+    .name {
+        font-size: 2.3vw;
+    }
+
+    .grid-item.item3 {
+        padding:0 5%;
+    }
+
+    .total {
+        font-size: 3vw;
+    }
+    
+}  
